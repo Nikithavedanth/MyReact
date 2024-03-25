@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <h2>DataBinding Example</h2>
+   <table [border]="tableBorder" [width]="tableWidth" [attr.height]="tableHeight">
+    <!-- <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{product.productId}}</td>
+                <td>{{product.productName}}</td>
+                <td>{{product.price}}</td>
+                <td>
+                    <input type="checkbox" name="" [checked]="product.stock"/>
+                </td>
+            </tr>
+
+        </tbody> -->
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Availability</th>
+
+        </tr>
+        <tr>
+            <td>{{product.productId}}</td>
+            <td>{{product.productName}}</td>
+            <td>{{product.price}}</td>
+            <td>
+                <input type="checkbox" name="" [checked]="product.stock"/>
+            </td>
+        </tr>
+
+    </table>
+</div>

@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="mt-4">
+        <div class="mb-2">
+            <button (click)="GetUpdatedData()"class="btn btn-primary">Get Updated Data</button>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>EmpId</th>
+                    <th>EmpName</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of emps; trackBy:TrackChanges">
+                    <td>{{item.empId}}</td>
+                    <td>{{item.empName}}</td>
+                    <td>{{item.salary}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

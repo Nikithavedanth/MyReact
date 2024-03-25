@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <h2>Product Details</h2>
+    <dl>
+        <!-- <dt>Image</dt>
+        <dd>
+            <img [src]="product.Image" width="200" height="200" alt="">
+        </dd> -->
+        <dt>Product Name</dt>
+        <dd>{{product.Name}}</dd>
+        <dt>Product Price</dt>
+        <dd>{{product.Price}}</dd>
+        <dt class="form-switch">
+            <input type="checkbox" name="flag" [(ngModel)]="flag" id="">
+            {{flag==true?"Show":"Hide"}}
+        </dt>
+        <dd *ngIf="flag">
+            <img [src]="product.Image" width="200" height="200" alt="">
+        </dd>
+    </dl>
+</div>

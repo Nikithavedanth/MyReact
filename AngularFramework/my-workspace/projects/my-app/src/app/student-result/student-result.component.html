@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <h1 class="text-center">Student Information</h1>
+    <hr>
+    <div class="row">
+        <div class="col-6">
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <th>StudentID</th>
+                        <td>{{stdId}}</td>
+                    </tr>
+                    <tr>
+                        <th>StudentName</th>
+                        <td>{{stdName}}</td>
+                    </tr>
+                    <tr>
+                        <th>Total Marks</th>
+                        <td>{{marks}}</td>
+                    </tr>
+                    <tr>
+                        <th>Average Marks</th>
+                        <td>{{avg}}</td>
+                    </tr>
+                    <tr>
+                        <th>Result</th>
+                        <td>{{result}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Enter Student Id</th>
+                        <td><input type="text" [(ngModel)]="stdId" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Student Name</th>
+                        <td><input type="text"[(ngModel)]="stdName" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Sub1</th>
+                        <td><input type="text"[(ngModel)]="sub1" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Sub2</th>
+                        <td><input type="text"[(ngModel)]="sub2" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>Enter Sub3</th>
+                        <td><input type="text"[(ngModel)]="sub3" name="" id=""></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button (click)="Calculation()">CalResult</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<p>Product Information</p>
+<hr>
+<dl>
+    <dt>ProductId</dt>
+    <dd>{{product.productId}}</dd>
+    <dt>ProductName</dt>
+    <dd>{{product.productName}}</dd>
+    <dt>Stock Availability</dt>
+    <dd>
+        <input type="checkbox" name="" checked="{{product.isAvailable}}" id=""/>
+        <!--here Interpolation syntax is not a good practice-->
+    </dd>
+    <dt>Image</dt>
+    <dd>
+        <img src="{{product.imageUrl}}" height="200px" width="200px" alt=""/>
+    </dd>
+</dl>

@@ -1,0 +1,16 @@
+<div>
+    Product Name:{{productName}}<br>
+    City:{{city}}<br>
+    Stock Availability:{{stock==true?"Available":"Out of Stock"}}
+</div>
+<div>
+    Enter Product Name:<input type="text" [(ngModel)]="productName" name="" id=""><br>
+    Stock Availability:<input type="checkbox" [(ngModel)]="stock" name="" id=""><br>
+    Select City:
+    <select [(ngModel)]="city">
+        <option>Hyderabad</option>
+        <option>Vizag</option>
+        <option>Delhi</option>
+    </select>
+   
+</div>
